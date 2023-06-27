@@ -13,6 +13,9 @@ public class Shotgun : MonoBehaviour
 
     public LayerMask enemy;
     public GameObject explosion;
+
+    float firstShot;
+    float reloadTime = 0.5f;
    
     Camera cam;
 
@@ -27,8 +30,20 @@ public class Shotgun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Fire1")){
-        Shoot();}
+        if (firstShot > 0)
+        {
+            firstShot -= Time.deltaTime;
+        } 
+
+        if(Input.GetButtonDown("Fire1"))
+        {
+            if(firstShot <= 0)
+            {
+                firstShot = reloadTime; 
+                Shoot();
+            }    
+        }
+        Debug.Log(reloadTime);
     }
 
     private void Shoot()

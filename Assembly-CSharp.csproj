@@ -43,8 +43,10 @@
      <Compile Include="Assets/Scripts/SFPSC_PlayerMovement.cs" />
      <Compile Include="Assets/Scripts/Shotgun.cs" />
      <Compile Include="Assets/Scripts/Grappling Hook/SFPSC_GrapplingHook.cs" />
-     <Compile Include="Assets/Scripts/SFPSC_FPSCamera.cs" />
      <Compile Include="Assets/Scripts/NewBehaviourScript.cs" />
+     <Compile Include="Assets/Scripts/SFPSC_FPSCamera.cs" />
+     <Compile Include="Assets/Scripts/PlayerHealthBar.cs" />
+     <Compile Include="Assets/Scripts/Player.cs" />
      <None Include="Assets/Simple FPS Controller/Materials/Shaders/Unlit_Texture_Color.shader" />
      <None Include="Assets/Double-barrel gun/Stand/Standard_Two_Sided .shader" />
      <None Include="Assets/NavMeshComponents-master/ProjectSettings/ProjectVersion.txt" />
@@ -650,14 +652,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="NavMeshComponentsExamples.csproj">
-      <Project>{0a852b84-7a52-5a6a-c3b9-77bdcd316501}</Project>
-      <Name>NavMeshComponentsExamples</Name>
-    </ProjectReference>
-    <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{35a63fc0-09de-fbcc-f802-265f4ed60e66}</Project>
-      <Name>NavMeshComponents</Name>
-    </ProjectReference>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
       <Project>{32a169c4-d23d-1976-c5af-75321fdcf69b}</Project>
       <Name>NavMeshComponentsEditor</Name>
@@ -665,6 +659,14 @@
     <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
       <Project>{03d1290c-eb26-9b02-f050-30acd563aeb0}</Project>
       <Name>NavMeshComponentsExamplesEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsExamples.csproj">
+      <Project>{0a852b84-7a52-5a6a-c3b9-77bdcd316501}</Project>
+      <Name>NavMeshComponentsExamples</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{35a63fc0-09de-fbcc-f802-265f4ed60e66}</Project>
+      <Name>NavMeshComponents</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
