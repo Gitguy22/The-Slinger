@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{a179f77a-78a0-87eb-8b5a-ae9c0fec3bb3}</ProjectGuid>
+    <ProjectGuid>{eb5e1eb8-9821-3a7b-97b7-cec2c278e8ff}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets/Scripts/SFPSC_KeyManager.cs" />
+     <Compile Include="Assets/Scripts/Player.cs" />
      <Compile Include="Assets/Scripts/EnemyAI.cs" />
      <Compile Include="Assets/Scripts/Grappling Hook/SFPSC_Rope.cs" />
      <Compile Include="Assets/Scripts/Wall Run/SFPSC_WallRun.cs" />
@@ -44,9 +45,9 @@
      <Compile Include="Assets/Scripts/Shotgun.cs" />
      <Compile Include="Assets/Scripts/Grappling Hook/SFPSC_GrapplingHook.cs" />
      <Compile Include="Assets/Scripts/NewBehaviourScript.cs" />
-     <Compile Include="Assets/Scripts/SFPSC_FPSCamera.cs" />
      <Compile Include="Assets/Scripts/PlayerHealthBar.cs" />
-     <Compile Include="Assets/Scripts/Player.cs" />
+     <Compile Include="Assets/Scripts/SFPSC_FPSCamera.cs" />
+     <Compile Include="Assets/amusedART/Mushroom_Monster/Script/MushroomMon_Ani_Test.cs" />
      <None Include="Assets/Simple FPS Controller/Materials/Shaders/Unlit_Texture_Color.shader" />
      <None Include="Assets/Double-barrel gun/Stand/Standard_Two_Sided .shader" />
      <None Include="Assets/NavMeshComponents-master/ProjectSettings/ProjectVersion.txt" />
@@ -273,7 +274,7 @@
         <HintPath>/Applications/2020.3.27f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>/Users/game1/The Slinger/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+        <HintPath>/Users/game3/Desktop/Create with Code/The-Slinger/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>/Applications/2020.3.27f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -621,51 +622,51 @@
         <HintPath>/Applications/2020.3.27f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>/Users/game1/The Slinger/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>/Users/game3/Desktop/Create with Code/The-Slinger/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>/Users/game1/The Slinger/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>/Users/game3/Desktop/Create with Code/The-Slinger/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>/Users/game1/The Slinger/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>/Users/game3/Desktop/Create with Code/The-Slinger/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>/Users/game1/The Slinger/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>/Users/game3/Desktop/Create with Code/The-Slinger/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>/Users/game1/The Slinger/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>/Users/game3/Desktop/Create with Code/The-Slinger/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>/Users/game1/The Slinger/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>/Users/game3/Desktop/Create with Code/The-Slinger/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>/Users/game1/The Slinger/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>/Users/game3/Desktop/Create with Code/The-Slinger/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>/Users/game1/The Slinger/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+        <HintPath>/Users/game3/Desktop/Create with Code/The-Slinger/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>/Users/game1/The Slinger/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>/Users/game3/Desktop/Create with Code/The-Slinger/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>/Users/game1/The Slinger/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>/Users/game3/Desktop/Create with Code/The-Slinger/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
-      <Project>{32a169c4-d23d-1976-c5af-75321fdcf69b}</Project>
+      <Project>{b03f67cd-6989-6ab9-d6ed-70f9af0ef1f6}</Project>
       <Name>NavMeshComponentsEditor</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
-      <Project>{03d1290c-eb26-9b02-f050-30acd563aeb0}</Project>
+      <Project>{29b5bf9c-b7fe-5f7a-ffb8-fa934c80c6cc}</Project>
       <Name>NavMeshComponentsExamplesEditor</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsExamples.csproj">
-      <Project>{0a852b84-7a52-5a6a-c3b9-77bdcd316501}</Project>
+      <Project>{4732ffc4-854c-d541-f786-676b3c25e76f}</Project>
       <Name>NavMeshComponentsExamples</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{35a63fc0-09de-fbcc-f802-265f4ed60e66}</Project>
+      <Project>{a4c9aaca-ee3b-4ded-8e1d-0927f751d387}</Project>
       <Name>NavMeshComponents</Name>
     </ProjectReference>
   </ItemGroup>
