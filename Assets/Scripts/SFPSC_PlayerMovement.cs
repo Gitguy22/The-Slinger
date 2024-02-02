@@ -46,6 +46,12 @@ public class SFPSC_PlayerMovement : MonoBehaviour
     private SFPSC_WallRun wallRun;
     private SFPSC_GrapplingHook grapplingHook;
 
+    private float powerupStrength = 15.0f;
+    public bool hasPowerup;
+
+
+    
+
     private void Start()
     {
         rb = this.GetComponent<Rigidbody>();
@@ -162,5 +168,34 @@ public class SFPSC_PlayerMovement : MonoBehaviour
     public void DisableMovement()
     {
         enableMovement = false;
+    }
+
+     private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Powerup"))
+        {
+            hasPowerup = true;
+            Destroy(other.gameObject);
+            StartCoroutine(PowerupCountdownRoutine());
+        }
+    }
+    IEnumerator PowerupCountdownRoutine()
+    {
+        yield return new WaitForSeconds(7);
+        hasPowerup = false;
+    }
+
+    private void Update()
+    {
+        if(hasPowerup == true)
+        {
+            walkSpeed = 16.0f;
+            runSpeed = 24.0f;
+        }
+        else
+        {
+            walkSpeed = 8.0f;
+            runSpeed = 12.0f;
+        }
     }
 }

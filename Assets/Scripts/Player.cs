@@ -9,10 +9,12 @@ public class Player : MonoBehaviour
     int currentHealth;
     public GameObject projectile;
 
+    
 
 
+    
 
- public void ChangeHealth(int amount)
+    public void ChangeHealth(int amount)
     {
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         
